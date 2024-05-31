@@ -24,6 +24,14 @@ const IPLocalReservedPortsNamespacedKernelVersion = "3.16"
 // (ref: https://github.com/torvalds/linux/commit/d752c364571743d696c2a54a449ce77550c35ac5)
 const IPVSConnReuseModeMinSupportedKernelVersion = "4.1"
 
+// TCPReceiveMemoryNamespacedKernelVersion is the kernel version in which net.ipv4.tcp_rmem was namespaced(netns).
+// (ref: https://github.com/torvalds/linux/commit/356d1833b638bd465672aefeb71def3ab93fc17d)
+const TCPReceiveMemoryNamespacedKernelVersion = "4.15"
+
+// TCPTransmitMemoryNamespacedKernelVersion is the kernel version in which net.ipv4.tcp_wmem was namespaced(netns).
+// (ref: https://github.com/torvalds/linux/commit/356d1833b638bd465672aefeb71def3ab93fc17d)
+const TCPTransmitMemoryNamespacedKernelVersion = "4.15"
+
 // TCPKeepAliveTimeNamespacedKernelVersion is the kernel version in which net.ipv4.tcp_keepalive_time was namespaced(netns).
 // (ref: https://github.com/torvalds/linux/commit/13b287e8d1cad951634389f85b8c9b816bd3bb1e)
 const TCPKeepAliveTimeNamespacedKernelVersion = "4.5"
